@@ -1,0 +1,60 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.loader {
+  text-align: center;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.machine-img {
+  width: 150px;
+  max-width: 80%;
+  height: auto;
+  margin-top: 50px;
+  animation: zoom 1.5s ease-in-out;
+}
+
+.brand-name {
+  margin-top: 20px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #111;
+  letter-spacing: 1px;
+}
+
+.main-content {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 480px) {
+  .brand-name {
+    font-size: 1.2rem;
+  }
+
+  .machine-img {
+    width: 120px;
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes zoom {
+  0% { transform: scale(0.8); }
+  100% { transform: scale(1); }
+}
