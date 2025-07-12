@@ -58,3 +58,23 @@ body, html {
   0% { transform: scale(0.8); }
   100% { transform: scale(1); }
 }
+
+
+#typewriter-text {
+  font-size: 1.4rem;
+  color: #333;
+  text-align: center;
+  margin: 40px 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid #333;
+  width: fit-content;
+  animation: blink-caret 0.75s step-end infinite;
+}
+
+@keyframes blink-caret {
+  50% {
+    border-color: transparent;
+  }
+}
+
